@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero{
+    background-image: url('assets/sunny.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    transition: 2s;
+    opacity: 1;   
+  }
+  .hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+  
+}
+.content{
+    z-index: 100;
+}
+.navbar{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 1;
+    padding: 2em;
+    overflow-y: scroll;
+    cursor: pointer;
+}
+@media (max-width: 800px) {
+    .navbar,
+    .content{
+        position: relative;
+        top: initial;
+        width: 100%;
+    }
+}
+.cities{
+    border-bottom: 1px solid white;
+    width: 80%;
+}
+.search-box{
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    appearance: none;
+}
+input:focus{
+    outline: none;
+}
