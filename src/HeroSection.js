@@ -37,7 +37,7 @@ const HeroSection = () => {
 
   const fetchData = async () => {
       try{
-          const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=5993123942ec4d87b45144923221706&&q=${idFromButtonClick}`);
+          const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=5993123942ec4d87b45144923221706&&q=${idFromButtonClick}`);
           const json = await response.json()
           setCapital(json)
       }
