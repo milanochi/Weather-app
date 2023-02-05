@@ -58,13 +58,13 @@ const HeroSection = () => {
                           <div className='flex space-x-8 items-center content'>
                       <h1 className='text-white text-6xl md:text-8xl'>{capital.current?.temp_c}&#176;</h1>
                    <div className='flex flex-col space-y-2'>
-                        <h2 className='text-white text-5xl font-sm'>{capital.location?.name}</h2>
-                        <p className='text-white text-sm md:text-md'>{capital.location?.localtime}</p>
+                        <h2 className='text-white text-3xl md:text-5xl font-light'>{capital.location?.name}</h2>
+                        <p className='text-white text-xs md:text-md'>{capital.location?.localtime}</p>
                       </div>
                         <div className='flex flex-col space-x-2'>
                           {/* <img src={} alt="icon" /> */}
                           <div className='text-white text-center text-5xl'>&#176;</div>
-                          <span className='text-white'>{capital.current?.condition.text}</span>
+                          <span className='text-white text-sm md:text-md'>{capital.current?.condition.text}</span>
                         </div>
                     </div>
               </div>
