@@ -94,7 +94,7 @@ const iconImg = {
                   <span className='text-sm pt-10 font-bold text-white'>the.weather</span>
 
                           <div className='flex justify-between items-center py-8 md:py-0 md:max-w-xl content'>
-                      <h1 className='text-white text-7xl md:text-8xl md:w-1/3'>{capital.current?.temp_c}&#176;</h1>
+                      <h1 className='text-white text-6xl md:text-8xl md:w-1/3'>{capital.current?.temp_c}&#176;</h1>
                    <div className='flex flex-col items-center py-2 px-0 md:px-0 md:py-0 text-center space-y-2 md:w-1/3'>
                         <h2 className='text-white text-3xl md:text-5xl font-light'>{capital.location?.name}</h2>
                         <p className='text-white text-xs md:text-md'>{capital.location?.localtime}</p>
