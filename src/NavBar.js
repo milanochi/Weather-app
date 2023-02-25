@@ -7,7 +7,7 @@ const NavBar = ({ setId, handleClick, handleTarget, id, targetCity, details}) =>
     <div>
         <div className='navbar'>
             <form onSubmit={handleClick}> 
-            <input type='text' className='search-box relative text-white' value={id} placeholder='Search location...' onChange={e => setId(e.target.value)}/>
+            <input type='text' className='search-box relative text-white rounded-none' value={id} placeholder='Search location...' onChange={e => setId(e.target.value)}/>
             <button type='submit' className='p-2 text-sm text-white bg-black rounded-md absolute top-10 right-15'>Search</button>
             </form>
             <div className='flex flex-col space-y-6 pt-8 pb-8 cities'>
