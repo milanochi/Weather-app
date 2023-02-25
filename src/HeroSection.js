@@ -90,17 +90,17 @@ const iconImg = {
                         code == 1246 ||
                         code == 1249 ||
                         code == 1252 ? 'overcast' : 'hero' }`}>
-            <div className='container mx-auto flex flex-col space-y-20 md:space-y-96 px-6 md:px-0'>
+            <div className='container mx-auto flex flex-col space-y-19 md:space-y-96 px-6 md:px-0'>
                   <span className='text-sm pt-10 font-bold text-white'>the.weather</span>
 
-                          <div className='flex justify-between md:space-x-10 items-center md:max-w-xl content'>
+                          <div className='flex justify-between items-center py-8 md:py-0 md:max-w-xl content'>
                       <h1 className='text-white text-7xl md:text-8xl md:w-1/3'>{capital.current?.temp_c}&#176;</h1>
                    <div className='flex flex-col items-center py-2 px-0 md:px-0 md:py-0 text-center space-y-2 md:w-1/3'>
-                        <h2 className='text-white text-3xl md:text-4xl font-light'>{capital.location?.name}</h2>
+                        <h2 className='text-white text-3xl md:text-5xl font-light'>{capital.location?.name}</h2>
                         <p className='text-white text-xs md:text-md'>{capital.location?.localtime}</p>
                       </div>
                         <div className='flex flex-col items-center text-center md:text-end md:justify-center md:w-1/3'>
-                          <img src={iconImg.src} class="h-10 md:h-16" alt={iconImg.alt} />
+                          <img src={iconImg.src} class="-mt-4 h-10 md:h-16" alt={iconImg.alt} />
                           {/* <div className='text-white text-5xl'></div> */}
                           <div className='text-white text-sm md:text-md'>{capital.current?.condition.text}</div>
                         </div>
