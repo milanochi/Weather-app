@@ -100,7 +100,7 @@ const iconImg = {
                         <p className='text-white text-xs md:text-md'>{capital.location?.localtime}</p>
                       </div>
                         <div className='flex flex-col items-center text-center md:text-end md:justify-center md:w-1/3'>
-                          <img src={iconImg.src} class="-mt-4 h-10 md:h-16" alt={iconImg.alt} />
+                          <img src={iconImg.src} class="h-10 md:h-16" alt={iconImg.alt} />
                           {/* <div className='text-white text-5xl'></div> */}
                           <div className='text-white text-sm md:text-md'>{capital.current?.condition.text}</div>
                         </div>
