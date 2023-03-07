@@ -43,7 +43,7 @@
     z-index: 0;
   
 }
-.overcast{
+.partlycloudy{
     background-image: url('assets/overcast.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@
     transition: 2s;
     opacity: 1;   
   }
-  .overcast::before{
+  .partlycloudy::before{
     content: '';
     position: absolute;
     top: 0;

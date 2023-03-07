@@ -1,4 +1,6 @@
 import React from 'react'
+import Skeleton from 'react-loading-skeleton';
+
 
 const NavBar = ({ setId, handleClick, handleTarget, id, targetCity, details}) => {
 
